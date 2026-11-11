@@ -230,13 +230,13 @@ http://18.218.44.223:8086/
 
 API de categorías:
 
-http://18.218.44.223:8086/api/categorias
+http://18.218.44.223:8086/categorias
 
 ![alt text](src/img/cat.png)
 
 API de productos:
 
-http://18.218.44.223:8086/api/productos
+http://18.218.44.223:8086/productos
 
 ![alt text](src/img/prod.png)
 
