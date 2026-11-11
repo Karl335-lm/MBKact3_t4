@@ -146,6 +146,7 @@ Body → raw → JSON:
     "descripcion": "Productos electrónicos"
 }
 ```
+![alt text](src/img/post.png)
 
 ### Registrar un producto
 
@@ -163,11 +164,11 @@ Body → raw → JSON:
     "precio": 12500,
     "stock": 10,
     "categoria": {
-        "id": 1
+        "id": 2
     }
 }
 ```
-
+![alt text](src/img/postt.png)
 El producto se registra relacionado con la categoría cuyo ID se proporciona.
 
 ## Ejecución local
@@ -175,13 +176,13 @@ El producto se registra relacionado con la categoría cuyo ID se proporciona.
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/Karl335-lm/KMBact3_t4.git
+git clone https://github.com/Karl335-lm/MBKact3_t4.git
 ```
 
 2. Entrar a la carpeta:
 
 ```bash
-cd KMBact3_t4
+cd MBKact3_t4
 ```
 
 3. Crear la base de datos en MySQL:
@@ -190,7 +191,7 @@ cd KMBact3_t4
 CREATE DATABASE springboot_actividad3;
 ```
 
-4. Configurar la variable de entorno `DB_PASSWORD` con la contraseña del usuario de MySQL.
+4. Configurar la variable de entorno `DB_PASSWORD` con la contraseña del usuario de MySQL o de MariaDB.
 
 En Git Bash:
 
@@ -198,6 +199,7 @@ En Git Bash:
 export DB_PASSWORD='TU_CONTRASEÑA'
 ```
 
+![alt text](src/img/bd.png)
 5. Ejecutar el proyecto:
 
 ```bash
@@ -218,27 +220,25 @@ La aplicación también fue desplegada en un servidor VPS utilizando MariaDB.
 - Base de datos: `springboot_actividad3`
 - Perfil de Spring Boot: `vps`
 
+![alt text](src/img/vps.png)
+
 URL de la aplicación:
 
 http://18.218.44.223:8086/
+
+![alt text](src/img/apiclacion.png)
 
 API de categorías:
 
 http://18.218.44.223:8086/api/categorias
 
+![alt text](src/img/cat.png)
+
 API de productos:
 
 http://18.218.44.223:8086/api/productos
 
-## Arquitectura del proyecto
-
-Se utilizó una arquitectura por capas:
-
-- **Model:** representa las entidades y sus atributos.
-- **Repository:** permite realizar operaciones con la base de datos mediante Spring Data JPA.
-- **Service:** contiene la lógica del sistema y conecta los controladores con los repositorios.
-- **Controller:** recibe las solicitudes y devuelve las respuestas.
-- **View:** contiene las páginas HTML desarrolladas con Thymeleaf.
+![alt text](src/img/prod.png)
 
 ## Autor
 
